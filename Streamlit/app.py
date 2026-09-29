@@ -1009,9 +1009,9 @@ st.markdown(CSS, unsafe_allow_html=True)
 # =============================================================================
 @st.cache_data(show_spinner="Loading customer data...")
 def load_data():
-    tx = pd.read_csv("transactions_with_segments.csv")
-    returns = pd.read_csv("returns_data.csv")
-    guests = pd.read_csv("guests_data.csv")
+    tx = pd.read_csv("../streamlit/transactions_with_segments.csv")
+    returns = pd.read_csv("../streamlit/returns_data.csv")
+    guests = pd.read_csv("../streamlit/guests_data.csv")
 
     tx["InvoiceDate"] = pd.to_datetime(tx["InvoiceDate"], errors="coerce")
     returns["InvoiceDate"] = pd.to_datetime(returns["InvoiceDate"], errors="coerce")
