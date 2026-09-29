@@ -12,6 +12,7 @@ Run:
 """
 
 import math
+from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
@@ -1007,11 +1008,14 @@ st.markdown(CSS, unsafe_allow_html=True)
 # =============================================================================
 # DATA LOADING
 # =============================================================================
+DATA_DIR = Path(__file__).resolve().parent
+
+
 @st.cache_data(show_spinner="Loading customer data...")
 def load_data():
-    tx = pd.read_csv("../streamlit/transactions_with_segments.csv")
-    returns = pd.read_csv("../streamlit/returns_data.csv")
-    guests = pd.read_csv("../streamlit/guests_data.csv")
+    tx = pd.read_csv(DATA_DIR / "transactions_with_segments.csv")
+    returns = pd.read_csv(DATA_DIR / "returns_data.csv")
+    guests = pd.read_csv(DATA_DIR / "guests_data.csv")
 
     tx["InvoiceDate"] = pd.to_datetime(tx["InvoiceDate"], errors="coerce")
     returns["InvoiceDate"] = pd.to_datetime(returns["InvoiceDate"], errors="coerce")
