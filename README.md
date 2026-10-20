@@ -34,7 +34,11 @@ Model quality: Silhouette Score 0.415, Davies–Bouldin 0.827. The silhouette sc
 - **At Risk:** win-back campaigns with personalized offers before the segment churns.
 
 ## Repository contents
-- `Customer_Segmentation_Portfolio.ipynb`: full analysis notebook with findings for every section.
+- `Customer_Segmentation.ipynb`: full analysis notebook with findings for every section.
+
+## Dashboard Link:
+https://onlineretailsegmentation-pwdmmwka2nmssyvmmxbpbm.streamlit.app/
+
 
 ## Tech stack
 Python, pandas, NumPy, scikit-learn, Plotly, Matplotlib, Seaborn, Streamlit.
