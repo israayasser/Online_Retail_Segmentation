@@ -37,7 +37,7 @@ Model quality: Silhouette Score 0.415, Davies–Bouldin 0.827. The silhouette sc
 - `Customer_Segmentation_Portfolio.ipynb`: full analysis notebook with findings for every section.
 
 ## Tech stack
-Python, pandas, NumPy, scikit-learn, Plotly, Matplotlib, Seaborn.
+Python, pandas, NumPy, scikit-learn, Plotly, Matplotlib, Seaborn, Streamlit.
 
 ## Limitations
 - One year of data from a single UK retailer, so results may not generalize to other markets.
